@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="jigar sable, portfolio, jigar, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Jigar's Portfolio. Full-Stack Web Developer and Android App Developer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="Portfolio-Website\assets\images\ushapicbackground.jpg" type="image/x-png">
+    <title>Portfolio | Usha Dharavath</title>
+</head>
+<body oncontextmenu="return false">
+
+<!-- pre loader -->
+<!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
+
+<!-- navbar starts -->
+<header>
+        <a href="/" class="logo"><i class="fab fa-node-js"></i> Usha</a>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+             <li><a href="https://drive.google.com/file/d/1g_6MM16gbDQBM_pSrZP1YfcLxK_RdU3H/view?usp=sharing">Resume</a></li>
+            <!-- <li><a href="#experience">Experience</a></li>  -->
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+</header>
+<!-- navbar ends -->
+
+
+<!-- hero section starts -->
+<section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+    <h2>Hi There,<br/> I'm Usha <span>Dharavath</span></h2>
+    <p>I am into <span class="typing-text"></span></p>
+    <a href="#about" class="btn"><span>About Me</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </a>
+    <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/dharavath-usharani-b5b6a1221/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+          <li><a class="github" aria-label="GitHub" href="https://github.com/D-Usharani" target="_blank"><i class="fab fa-github"></i></a></li>
+          <!-- <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/jigar_sable" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a class="telegram" aria-label="Telegram" href="https://t.me/lifecode5" target="_blank"><i class="fab fa-telegram-plane"></i></a></li> -->
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/dharavathusharani786"><i class="fab fa-instagram" target="_blank"></i></a></li>
+          <!-- <li><a class="dev" aria-label="Dev" href="https://dev.to/jigarsable" target="_blank"><i class="fab fa-dev"></i></a></li> -->
+        </ul>
+      </div>
+    </div>
+<div class="image">
+    <img draggable="false" class="tilt" src="data:image/jpeg;base64,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" alt="">
+</div>
+</section>
+<!-- hero section ends -->
+
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    
+    <div class="row">
+
+    <div class="image">
+        <img draggable="false" class="tilt" src="data:image/jpeg;base64,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" alt="">
+    </div>
+    <div class="content">
+        <h3>I'm usha</h3>
+        <span class="tag">Full Stack Developer</span>
+        
+        <p>I am a Full-Stack developer based in Telangana, India. 
+          I am an Information Technology graduate from SBIT.
+          I am very passionate about improving my coding skills & developing applications & websites.
+          I build WebApps and Websites using MERN Stack.
+          Working for myself to improve my skills.
+          Love to build Full-Stack clones. </p>
+        
+        <div class="box-container">
+            <div class="box">
+              <p><span> age: </span> 21</p>
+              <p><span> phone : </span> +91 8885866715</p>
+            </div>
+            <div class="box">
+              <p><span> email : </span> dharavathusharani786@gmail.com</p>
+              <p><span> place : </span> Telangana, India - 507003</p>
+            </div>
+        </div>
+        
+        <div class="resumebtn">
+            <a href="https://drive.google.com/file/d/1yC6tcsx82izRo6UIMh2qj5zTJh-f4T13/view" class="btn"><span>Resume</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+<!-- skills section starts -->
+<section class="skills" id="skills">
+
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+    <div class="container">
+          <div class="row" id="skillsContainer">
+
+            <!-- <div class="bar">
+              <div class="info">
+                <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
+                <span>AdobeXD</span>
+              </div>
+            </div> -->
+
+      </div>
+</div>
+</section>
+<!-- skills section ends -->
+
+
+<!-- education section starts -->
+<section class="education" id="education">
+
+  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+
+    <div class="box-container">
+
+    <div class="box">
+        <div class="image">
+        <img draggable="false" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlxbDuZN-p1QuFwScoaPZYpquIkXX6VXFNXA&usqp=CAU" alt="">
+        </div>
+        <div class="content">
+        <h3>Bachelor of Engineering in Computer Science</h3>
+        <p>Swarna Bharathi Institute of Technology and Science</p>
+        <h4>2018-2022 | Completed</h4>
+        </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM1RYSUMkdQCZh911ocMu-uucaaq_9s9kRnQ&usqp=CAU" alt="">
+      </div>
+      <div class="content">
+      <h3>Intermediate </h3>
+      <p>Sree Narayana Junior College | TSBSC</p>
+      <h4>2016-2018 | Completed</h4>
+      </div>
+    </div>
+
+</div>
+</section>
+<!-- education section ends -->
+
+
+<!-- work project section starts -->
+<!-- <section class="work" id="work"> -->
+
+  <!-- <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+
+  <div class="box-container"> -->
+
+    <!-- <div class="box tilt">
+      <img draggable="false" src="./assets/images/projects/portfolio1.PNG" alt="" />
+      <div class="content">
+        <div class="tag">
+        <h3>Portfolio Website</h3>
+        </div>
+        <div class="desc">
+          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
+          <div class="btns">
+            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="https://github.com/jigar-sable/Portfolio-Website" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+<!-- </div> -->
+
+<!-- <div class="viewall">
+  <a href="/projects" class="btn"><span>View All</span>
+    <i class="fas fa-arrow-right"></i>
+</a>
+</div> -->
+
+<!-- </section> -->
+<!-- work project section ends -->
+
+<!-- experience section starts -->
+<!-- <section class="experience" id="experience">
+
+  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
+
+  <div class="timeline">
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>Self Employed</h2>
+        </div>
+        <div class="desc">
+            <h3>Full Stack Developer</h3>
+            <p>Oct 2021 - present</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container left">
+      <div class="content">
+        <div class="tag">
+          <h2>Mapstreak Flyseas</h2>
+        </div>
+        <div class="desc">
+            <h3>Web Developer | Internship</h3>
+            <p>June 2021 - Dec 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>The Spark Foundation</h2>
+        </div>
+        <div class="desc">
+            <h3>Website Developer | Internship</h3>
+            <p>May 2021 - June 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container left">
+      <div class="content">
+        <div class="tag">
+          <h2>The Spark Foundation</h2>
+        </div>
+        <div class="desc">
+            <h3>Mobile Application Developer | Internship</h3>
+            <p>April 2021 - May 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container right">
+      <div class="content">
+        <div class="tag">
+          <h2>Frshr Technologies</h2>
+        </div>
+        <div class="desc">
+            <h3>Wordpress Developer | Internship</h3>
+            <p>April 2021 - April 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container left">
+      <div class="content">
+        <div class="tag">
+          <h2>WonderingBlog</h2>
+        </div>
+        <div class="desc">
+            <h3>Web Development & SEO | Internship</h3>
+            <p>March 2021 - April 2021</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="morebtn">
+    <a href="/experience" class="btn"><span>View All</span>
+      <i class="fas fa-arrow-right"></i>
+  </a>
+  </div>
+
+</div>
+
+</section> -->
+<!-- experience section ends -->
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+  
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./assets/images/contact1.png" alt="">
+      </div>
+    <form id="contact-form">
+      
+      <div class="form-group">
+        <div class="field">
+          <input type="text" name="name" placeholder="Name" required>
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="email" placeholder="Email" required>
+          <i class='fas fa-envelope'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="phone" placeholder="Phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="message">
+        <textarea placeholder="Message" name="message" required></textarea>
+        <i class="fas fa-comment-dots"></i>
+        </div>
+        </div>
+      <div class="button-area">
+        <button type="submit">
+          Submit <i class="fa fa-paper-plane"></i></button>
+      </div>
+    </form>
+  </div>
+  </div>
+</section>
+<!-- contact section ends -->
+
+
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Usha's Portfolio</h3>
+          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <li><a href="https://drive.google.com/file/d/1yC6tcsx82izRo6UIMh2qj5zTJh-f4T13/view">Resume</a></li>
+          <!-- <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a> -->
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+91 8885866715</p>
+          <p> <i class="fas fa-envelope"></i>dharavathusharani786@gmail.com</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Telangana, India-507003</p>
+          <div class="share">
+
+              <a href="https://www.linkedin.com/in/dharavath-usharani-b5b6a1221/" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+              <a href="https://github.com/D-Usharani" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+              <a href="mailto:dharavathusharani786@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <!-- <a href="https://twitter.com/jigar_sable" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+              <a href="https://t.me/lifecode5" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a> -->
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/dharavath-usharani-b5b6a1221/"> Usha Dharavath</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- particle.js links -->
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script>
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- scroll reveal anim -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>
